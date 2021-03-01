@@ -33,9 +33,6 @@ end
 
 --- low battery screen update
 Screen.update_low_battery = function()
-  _norns.screen_rect(32,34,64,16)
-  _norns.screen_level(0)
-  _norns.screen_fill()
   _norns.screen_move(64,45)
   _norns.screen_level(15)
   _norns.screen_text_center("LOW BATTERY")
